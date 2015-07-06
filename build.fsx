@@ -319,12 +319,25 @@ Target "Release" (fun _ ->
 Target "BuildPackage" DoNothing
 
 // --------------------------------------------------------------------------------------
+// FSharpLint
+
+#I @"packages/FSharpLint"
+#r @"FSharpLint.FAKE"
+#r @"FSharpLint.Application"
+open FSharpLint.FAKE
+
+Target "Lint" (fun _ ->
+    !! "./**/*.fsproj"
+    |> Seq.iter (FSharpLint id))
+
+// --------------------------------------------------------------------------------------
 // Run all targets by default. Invoke 'build <Target>' to override
 
 Target "All" DoNothing
 
 "Clean"
   ==> "AssemblyInfo"
+  ==> "Lint"
   ==> "Build"
   ==> "CopyBinaries"
   ==> "RunTests"
