@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FSharpLintSettings xmlns="https://github.com/fsprojects/FSharpLint/blob/master/ConfigurationSchema.xsd">
+  <Analysers>
+    <Typography>
+      <Rules>
+        <TrailingNewLineInFile>
+          <Enabled>false</Enabled>
+        </TrailingNewLineInFile>
+      </Rules>
+    </Typography>
+  </Analysers>
+</FSharpLintSettings>
+
