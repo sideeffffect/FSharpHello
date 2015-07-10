@@ -41,14 +41,11 @@
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
-  <!--
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '11.0'">
-    -->
-  <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.5\Microsoft.FSharp.Targets')">
-    <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.5\Microsoft.FSharp.Targets</FSharpTargetsPath>
-  </PropertyGroup>
-  <!--
+      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.5\Microsoft.FSharp.Targets')">
+        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.5\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      </PropertyGroup>
     </When>
     <Otherwise>
       <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets')">
@@ -56,7 +53,6 @@
       </PropertyGroup>
     </Otherwise>
   </Choose>
-  -->
   <Import Project="$(FSharpTargetsPath)" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <ItemGroup>
