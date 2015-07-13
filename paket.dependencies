@@ -2,6 +2,7 @@ source https://nuget.org/api/v2
 
 nuget FSharp.Formatting
 nuget FSharpLint
+nuget FsCheck.Nunit
 nuget FsUnit
 nuget NUnit 
 nuget NUnit.Runners
