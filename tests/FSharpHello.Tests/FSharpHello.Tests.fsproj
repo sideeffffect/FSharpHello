@@ -76,6 +76,9 @@
     <Reference Include="nunit.core.interfaces">
       <HintPath>..\..\packages\NUnit.Runners\tools\lib\nunit.core.interfaces.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.util">
+      <HintPath>..\..\packages\NUnit.Runners\tools\lib\nunit.util.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\FSharpHello\FSharpHello.fsproj">
