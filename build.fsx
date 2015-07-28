@@ -139,6 +139,7 @@ Target "RunTests" (fun _ ->
     |> NUnit (fun p ->
         { p with
             DisableShadowCopy = true
+            Domain = NUnitDomainModel.DefaultDomainModel
             TimeOut = TimeSpan.FromMinutes 20.
             OutputFile = "TestResults.xml" })
 )
