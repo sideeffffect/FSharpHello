@@ -1,6 +1,5 @@
 source https://nuget.org/api/v2
 
-nuget FSharp.Core
 nuget FSharp.Formatting
 nuget FSharpLint
 nuget FsCheck.Nunit
