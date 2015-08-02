@@ -3,3 +3,4 @@ NUnit.Runners
 FSharpLint
 FsUnit
 FsCheck.Nunit
+FSharp.Core
