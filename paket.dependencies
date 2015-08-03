@@ -3,7 +3,7 @@ source https://nuget.org/api/v2
 nuget FSharp.Formatting
 nuget FSharpLint
 nuget FsCheck.Nunit
-nuget FsUnit
+nuget FsUnit prerelease
 nuget NUnit 
 nuget NUnit.Runners
 nuget FAKE
